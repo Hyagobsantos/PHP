@@ -18,8 +18,26 @@
   <dd>exemplo-02 - Mais sobre variáveis e algumas funções do php</dd>
   <dd>exemplo-03 - Tipos de Variáveis</dd>
   <dd>exemplo-04 - Variaveis super globais</dd>
-  <dd></dd>
-  
+  <dd>exemplo-05 - Escopo de Variável</dd>
+
+  <dt>Operadores</dt>
+  <dd>exemplo-01 - Operadores em Php</dd>
+  <dd>exemplo-02 - Operadores Aritimeticos</dd>
+
+  <dt>Strings</dt>
+  <dd>exemplo-01 - aspas simples e dublas </dd>
+  <dd>exemplo-02 - Funções de String</dd>
+
+  <dt>Include</dt>
+  <dd>exemplo-01 - include de um arquivo </dd>
+  <dd>exemplo-02 - Funções de chamada no require</dd>
+
+  <dt>Estruturas De Controle</dt>
+  <dd>exemplo-01 - condicional if </dd>
+  <dd>exemplo-02 - Switch Case</dd>
+  <dd>exemplo-03 - For</dd>
+  <dd>exemplo-04 - Foreach</dd>
+  <dd>exemplo-05 - While</dd>
 </dl>
 
 <h2 style="text-decoration: underline">Funções e Metodos PHP</h2>
@@ -32,7 +50,21 @@ isset() //Verifica se a Variavel existe ou contém valor se sim retorna true cas
 exit //para a execução do codigo quando é encontrado
 var_dump() //monstra o tipo da variavel
 fopen() //abre um arquivo em tradução file open
-
+global // caso exista uma variavel fora do escopo posso chamar ela passando global antes da variável
+strtoupper() //converte string para Maiuscula
+strtolower() // converte string para minuscula
+ucwords() //converte a primeira letra de cada palavra em maiuscula
+ucfirst() //converte só a primeira letra em maiuscula
+str_replace() //troca o termo definido pelo buscado na string
+strpos() //position encontra em qual posição estã a string buscada e retorno o numero
+substr() //recebe a string, a posição de inicio, a posição de final e retorna a string cortada
+strlen() //retorna quantas letras tem a string passada
+include // tenta inportar o arquivo mesmo com erro
+require // obriga que o arquivo exista e que esteja funcionando corretamente para importar, se não existir ou estiver com erro, o require gera erro fatal
+require_once // faz a mesma coisa do require a diferencia é que traz o arquivo apenas uma vez
+include_once // faz a mesma coisa do include a diferencia é que traz o arquivo apenas uma vez
+continue //continua a execução
+rand() //sorteia numeros aleatorios
 ```
 
 <br />
@@ -69,4 +101,36 @@ objeto
 ```php
 resource
 null
+```
+
+<br />
+<h2 style="text-decoration: underline">Operadores</h2>
+
+```php
+= //atribuição
+. //concatenação
+.= //atribui e concatena
++= //atribui e soma
+-= //atribui e subtrai
+*= //atribui e multiplica
++ //soma
+- //subtração
+* //multiplicação
+/ //divisão
+% //mod
+** //exponenciação
+> //maior
+< //menor
+>= //maior ou igual
+<= //manor ou igual
+== //igual valor
+=== //igual tipo e valor
+!= //diferente
+!== //diferente e tipo
+<=> //spaceship 1 caso o primeiro valor for maior 0 se forem iguais -1 caso o segundo valor for maior
+?? //nullcolescing tras o valor que existir se tiver um null ele ignora, assim que encontrar o primeiro valor valido ele retorna
+++ //incremental
+-- //decremental
+&& //and
+|| //or
 ```
