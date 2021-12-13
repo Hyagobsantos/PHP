@@ -9,6 +9,7 @@
     echo "Hello World"
 ?>
 ```
+
 <h2 style="text-decoration: underline">Conteúdo Do Repositório</h2>
 
 <dl>
@@ -56,6 +57,14 @@
   <dd>exemplo-04 - Passagem de Paramentros Valor X Referência </dd>
   <dd>exemplo-05 - Declaração de tipos escalares </dd>
   <dd>exemplo-06 - Funções Recursivas </dd>
+  <dd>exemplo-07 - Funções Anônimas </dd>
+
+  <dt>Date</dt>
+  <dd>exemplo-01 - Funções de data e hora</dd>
+  <dd>exemplo-02 - Convertendo data para timestamp</dd>
+  <dd>exemplo-03 - Conhecendo setLocale</dd>
+  <dd>exemplo-04 - Classe DateTime</dd>
+  
   
 </dl>
 
@@ -97,6 +106,11 @@ session_unset() //limpa variaveis de sessão, caso não receba numhuma variavel 
 session_destroy() //enquanto session_unset limpa as variaveis de sessão ela ainda permanece com o usuario ativo na sessão, session_destroy ele limpa tudo e remove o usuario da sessão
 func_get_args() //pega os paramentos passados na funcao, mesmo que não tenha nenhuma variavel passada como paramentro ex function ola();
 gettype() // monstra de que tipo é a variavel
+count() //conta quantos elementos tem dentro de um array
+strtotime() //converte uma string para timestamp ex strtotime("2001-09-11") aceita expressoes ex now or +1 day
+setlocale() //define o padão de linguagem e região ex setlocale(LC_ALL, "pt_BR", "pt_BR.utf-8", "portuguese")
+DIRECTORY_SEPARATOR // é uma constante pré definida que mostra a barra certa 
+strftime() //formata uma hora/data de acordo com as configurações locais
 ```
 
 <br />
